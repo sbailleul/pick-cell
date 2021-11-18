@@ -1,15 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
+import "@openzeppelin/contracts/token/ERC721/ERC721Enumerable.sol";
 
-struct Pixel{
-    uint16 x;
-    uint16 y;
-    uint color;
-}
+
 
 contract Migrations is ERC721   {
+    struct Pixel{
+        uint16 x;
+        uint16 y;
+        uint color;
+    }
     address public owner = msg.sender;
     uint public last_completed_migration;
 

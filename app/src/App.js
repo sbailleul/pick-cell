@@ -4,7 +4,7 @@ import { Drizzle } from "@drizzle/store";
 import drizzleOptions from "./drizzleOptions";
 import MyComponent from "./MyComponent";
 import "./App.css";
-
+require('dotenv').config()
 const drizzle = new Drizzle(drizzleOptions);
 
 const App = () => {

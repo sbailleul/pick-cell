@@ -1,30 +1,27 @@
+
+# Ganache
+Installer ganache
+```npm install –g ganache-cli```
+Démarrer ganache 
+```ganache-cli -a 40 -l 0x1C9C380 -h 0.0.0.0```
+
 # Truffle
-
-## Installer Truffle
-
-Installer NodeJS , version > 7
-
-* ```npm install –g truffle```
-* ```npm install –g ganache-cli```
+Installer truffle
+```npm install –g truffle```
 
 ## Box
-
 Box utilisée : https://www.trufflesuite.com/boxes/drizzle
 Initialiser le template : ```npx truffle unbox drizzle```
 
-### Déploiement
-
-Démarre la console de développement : ```truffle develop```
-Dans la console dev effectuer :
-
-* ```compile```
-* ```migrate```
+## Déploiement
+Pour déployer sur la blockchain de ganache en réseau de dev
+* ```truffle compile```
+* ```truffle migrate --network develop```
 
 # Geth
 
 https://geth.ethereum.org/docs/install-and-build/installing-geth*
 Installation :
-
 ```
 sudo add-apt-repository -y ppa:ethereum/ethereum \
 sudo apt-get update \
